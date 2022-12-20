@@ -1,0 +1,10 @@
+#this application should run on 8761 port
+server:
+  port: 8761
+#eureka configuration for ,when we have only 1 eureka server
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      defaultzone: http://localhost:8761/eureka
