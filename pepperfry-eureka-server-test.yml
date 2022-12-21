@@ -1,0 +1,11 @@
+#this application should run on 8761 port
+server:
+  port: 8762
+#eureka configuration for ,when we have only 2 eureka servers
+#it is works like a back up eureka server
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8761
