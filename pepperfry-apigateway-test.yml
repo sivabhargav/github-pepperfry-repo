@@ -1,0 +1,8 @@
+server:
+  port: 5001
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8081,http://localhost:8082
